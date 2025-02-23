@@ -1,83 +1,123 @@
-<!DOCTYPE html><html lang="en" onclick="toggleMute()"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="k0shk4">
-    <meta property="og:description" content="''we are k0shk4 team ''">
-    <meta name="”keywords”" content="k0shk4, k0shk4 club, k0shk4">
-    <meta property="og:image" content="">
-     <meta name="theme-color" content="000000">
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <link href="css/main.css" rel="stylesheet">
-    <title>nn$tomp</title>
+    <title>Team K0shk4 - CTF Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="imresizer-1729923899288.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- <div class="kill-feed "><div>
-    <span class="player t"></span>
-      <span class="weapons">
-        <img height="20">
-          <img width="30" height="26" src="images/headshot.png">
-      </span>
-    <span class="player ct"></span></div>
-  </div> -->
-    <video autoplay="" muted="" loop="" id="myVideo">
-        <source src="media/Gzuz%20%26%20Bausa%20-%20Riechst%20du%20das.mp4" type="video/mp4">
-      </video>
-    <center><div id="clockDisplay" class="clockStyle"></div></center>
-    <div id="eny">
-      <a>click anywhere for music</a>
-    </div>
-  <div id="page">
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="#" class="logo">Team K0shk4</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
 
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-slide-up">About Team K0shk4</h1>
+            <p class="hero-subtitle animate-slide-up">Team K0shk4 is a professional CTF team specializing in cybersecurity challenges. Our expertise spans reverse engineering, cryptography, web security, and more, with a focus on innovation and precision.</p>
+        </div>
+    </section>
 
-    <br>
+    <section id="team" class="team-section">
+        <h2 class="section-title">Our Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <h3>Fr1d4y <strong style="color: #ff6347;">Leader</strong></h3>
+                <p>Expert in web vulnerabilities and penetration testing.</p>
+            </div>
+            <div class="team-card">
+                <h3>Hazim</h3>
+                <p>Specialist in digital forensics and network security.</p>
+            </div>
+            <div class="team-card">
+                <h3>Alfandi</h3>
+                <p>Reverse engineer expert and cybersecurity enthusiast.</p>
+            </div>
+        </div>
+    </section>
 
-    <div id="gif">
-        <img src="images/200w.gif" alt="koshk4">
-    </div>
-  
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Connect With Us</h2>
+        <div class="contact-grid">
+            <a href="https://instagram.com/k0shk4team" target="_blank" class="contact-card">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="https://twitter.com/k0shk4team" target="_blank" class="contact-card">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            <a href="https://github.com/k0shk4team" target="_blank" class="contact-card">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://discord.gg/cMrqVB6Xez" target="_blank" class="contact-card">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+            </a>
+            <!-- <a href="https://www.linkedin.com/in/eljumaa" target="_blank" class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span> -->
+            </a>
+        </div>
+    </section>
 
-    </br>
+    <footer>
+        <p>© 2024 Team K0shk4 | Cybersecurity Professionals</p>
+    </footer>
 
-    <div class="item">
-          <p class="label success new-label"><span class="align">k0shk4 </span></p>
-  </div>
-    
-    <div id="scroll-container">
-      <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><a href="https://eljumaa.github.io" target="_blank">eljumaa</a> 
-        <img src="images/rose_1f339.png" width="13" height="13"><a target="_blank">ALMURIE</a> 
-        <img src="images/rose_1f339.png" width="13" height="13"><a target="_blank">yamen</a> 
-        <img src="images/rose_1f339.png" width="13" height="13"><a target="_blank">Hazim</a> </marquee>
-    </div>
-    </div>
-  
-    <div class="container" style="height: 100%; display: flex; align-items: center; justify-content: center; margin: 0 auto">
-            <main>
-              <div id="links">
-                <a href="https://discord.gg/uHxzyVZweT" target="_blank">Discord</a>
-              </div>
-</main></div>
-<script type="text/javascript">
-function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
-$(document).on("keydown", disableF5);
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            themeToggle.querySelector('i').classList.toggle('fa-sun');
+            
+            // Update theme variables
+            if(document.body.classList.contains('light-theme')) {
+                document.documentElement.style.setProperty('--bg-color', '#f8fafc');
+                document.documentElement.style.setProperty('--text-color', '#0f172a');
+                document.documentElement.style.setProperty('--glass-bg', 'rgba(255, 255, 255, 0.7)');
+            } else {
+                document.documentElement.style.setProperty('--bg-color', '#0f172a');
+                document.documentElement.style.setProperty('--text-color', '#f8fafc');
+                document.documentElement.style.setProperty('--glass-bg', 'rgba(255, 255, 255, 0.05)');
+            }
+        });
 
-</script>
-<script>
-window.setTimeout("closeHelpDiv();", 3500);
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-function closeHelpDiv(){
-document.getElementById("eny").style.display=" none";
-}
-</script>
-<script>
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        });
 
-</script>
-<script src="js/jquery.min_1.js"></script>
-<script src="js/jquery.min.js"></script>
-<link href="css/css.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/event.js"></script>
-<script type="text/javascript" src="js/title.js"></script>
-<script type="text/javascript" src="js/clock.js"></script>
-<script type="text/javascript" src="js/vid.js"></script>
-<!-- <script src="js/killfeed.js"></script> -->
-</body></html>
+        document.querySelectorAll('.animate-slide-up').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
