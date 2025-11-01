@@ -8,6 +8,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imresizer-1729923899288.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .role {
+            color: #ff6347;
+            font-weight: bold;
+            display: block; /* Or inline, depending on layout preference */
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .team-card {
+            background: var(--glass-bg, rgba(255, 255, 255, 0.05));
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 <body>
     <nav class="glass-nav">
@@ -35,7 +59,8 @@
         <h2 class="section-title">Our Team</h2>
         <div class="team-grid">
             <div class="team-card">
-                <h3>Fr1d4y <strong style="color: #ff6347;">Leader</strong></h3>
+                <h3>Fr1d4y</h3>
+                <span class="role">Leader</span>
                 <p>Expert in web vulnerabilities and penetration testing.</p>
             </div>
             <div class="team-card">
@@ -43,8 +68,12 @@
                 <p>Specialist in digital forensics and network security.</p>
             </div>
             <div class="team-card">
-                <h3>0xIz0</h3>
+                <h3>Alfandi</h3>
                 <p>Reverse engineer expert and cybersecurity enthusiast.</p>
+            </div>
+            <div class="team-card">
+                <h3>Abdallh603</h3>
+                <p>Web security expert and cybersecurity enthusiast.</p>
             </div>
         </div>
     </section>
